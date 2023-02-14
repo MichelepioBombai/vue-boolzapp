@@ -116,3 +116,14 @@ footer {
   margin-top: 20px;
   margin-right: 25px;
 }
+
+.thumbs {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+.thumb img {
+  width: 65px;
+  display: flex;
+}

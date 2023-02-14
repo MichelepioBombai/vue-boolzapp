@@ -83,12 +83,15 @@
             </section>
             <!-- QUARTA SECTION SIDEBAR -->
             <section>
-              <div class="col">
-                <img
-                  :src="image"
-                  v-for="(image, imageIndex) in contacts.avatar"
-                  :class="(index == contacts.activeContact) ? 'active' : ''"
-                />
+              <div class="thumbs">
+                <div class="col thumb">
+                  <img
+                    :src="contact.avatar"
+                    v-for="(contact, index) in contacts"
+                    :class="(index == contacts.activeContact) ? 'active' : ''"
+                  />
+                  <h2 v-text="contacts.name"></h2>
+                </div>
               </div>
             </section>
           </div>
