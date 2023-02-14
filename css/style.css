@@ -16,12 +16,13 @@ body {
 .sidebar {
   width: 500px;
   height: 100%;
-  background-color: lightgrey;
+  background-color: hsl(0deg 0% 92%);
   flex-direction: row;
-  border-right: 1px solid grey;
+  border-right: 1px solid lightgrey;
 }
 
-.userMe {
+.userMe,
+img {
   border-radius: 50%;
   margin-left: 10px;
   margin-top: 10px;
@@ -30,15 +31,17 @@ body {
 h2 {
   display: inline;
   vertical-align: middle;
-  font-size: 22px;
+  font-size: 20px;
+  line-height: 50px;
+  padding-left: 10px;
 }
 
 .icons {
   color: grey;
   margin-right: 10px;
-  margin-top: 10px;
-  line-height: 50px;
+  margin-top: 25px;
   font-size: 22px;
+  gap: 25px;
 }
 
 .notifiche-mess {
@@ -71,9 +74,17 @@ h2 {
 
 header {
   display: flex;
-  width: calc(100% - 500px);
+  width: 100%;
   height: 68px;
-  background-color: lightgrey;
+  background-color: hsl(0deg 0% 92%);
+}
+
+.accesso-info {
+  font-size: 12px;
+  color: gray;
+  position: relative;
+  top: 20px;
+  right: 70px;
 }
 
 main {
@@ -82,7 +93,26 @@ main {
 }
 
 footer {
-  width: calc(100% - 500px);
+  width: 100%;
   height: 70px;
-  background-color: lightgrey;
+  background-color: hsl(27deg 27% 94%);
+}
+
+.text-input {
+  width: 670px;
+  height: 50px;
+  position: relative;
+  top: 10px;
+}
+
+.fa-face-smile {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+.fa-microphone {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-right: 25px;
 }
