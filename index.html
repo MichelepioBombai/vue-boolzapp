@@ -81,6 +81,16 @@
                 />
               </div>
             </section>
+            <!-- QUARTA SECTION SIDEBAR -->
+            <section>
+              <div class="col">
+                <img
+                  :src="image"
+                  v-for="(image, imageIndex) in contacts.avatar"
+                  :class="(index == contacts.activeContact) ? 'active' : ''"
+                />
+              </div>
+            </section>
           </div>
           <div class="content">
             <header class="d-flex justify-content-between">
