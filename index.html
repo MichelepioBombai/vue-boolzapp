@@ -85,9 +85,9 @@
             <ul class="list-contacts flex-grow-1 m-0 p-0">
               <li class="list-contacts--contact contact--active d-flex p-2">
                 <div class="contact--left d-flex flex-grow-1">
-                  <img src="./img/avatar_1.jpg" class="avatar" alt="" />
+                  <img :src="contact.avatar" class="avatar" alt="" :class="(index == contacts.contact--active)? 'active' : ''" v-for="(contact, index) in contacts" />
                   <p class="my-0 mx-2">
-                    Michele<br />
+                    {{contacts.name}}<br />
                     <span class="latest-access">Ultimo messaggio inviato</span>
                   </p>
                 </div>
@@ -95,11 +95,11 @@
                 <span class="latest-access">12:00</span>
               </li>
     
-              <li class="list-contacts--contact d-flex p-2">
+              <!-- <li class="list-contacts--contact d-flex p-2">
                 <div class="contact--left d-flex flex-grow-1">
                   <img src="./img/avatar_2.jpg" class="avatar" alt="" />
                   <p class="my-0 mx-2">
-                    Michele<br />
+                    Fabio<br />
                     <span class="latest-access">Ultimo messaggio inviato</span>
                   </p>
                 </div>
@@ -111,7 +111,7 @@
                 <div class="contact--left d-flex flex-grow-1">
                   <img src="./img/avatar_3.jpg" class="avatar" alt="" />
                   <p class="my-0 mx-2">
-                    Michele<br />
+                    Samuele<br />
                     <span class="latest-access">Ultimo messaggio inviato</span>
                   </p>
                 </div>
@@ -123,7 +123,7 @@
                 <div class="contact--left d-flex flex-grow-1">
                   <img src="./img/avatar_4.jpg" class="avatar" alt="" />
                   <p class="my-0 mx-2">
-                    Michele<br />
+                    Alessandro B.<br />
                     <span class="latest-access">Ultimo messaggio inviato</span>
                   </p>
                 </div>
@@ -135,7 +135,7 @@
                 <div class="contact--left d-flex flex-grow-1">
                   <img src="./img/avatar_5.jpg" class="avatar" alt="" />
                   <p class="my-0 mx-2">
-                    Michele<br />
+                    Alessandro L.<br />
                     <span class="latest-access">Ultimo messaggio inviato</span>
                   </p>
                 </div>
@@ -147,7 +147,7 @@
                 <div class="contact--left d-flex flex-grow-1">
                   <img src="./img/avatar_6.jpg" class="avatar" alt="" />
                   <p class="my-0 mx-2">
-                    Michele<br />
+                    Claudia<br />
                     <span class="latest-access">Ultimo messaggio inviato</span>
                   </p>
                 </div>
@@ -159,7 +159,7 @@
                 <div class="contact--left d-flex flex-grow-1">
                   <img src="./img/avatar_7.jpg" class="avatar" alt="" />
                   <p class="my-0 mx-2">
-                    Michele<br />
+                    Federico<br />
                     <span class="latest-access">Ultimo messaggio inviato</span>
                   </p>
                 </div>
@@ -171,13 +171,13 @@
                 <div class="contact--left d-flex flex-grow-1">
                   <img src="./img/avatar_8.jpg" class="avatar" alt="" />
                   <p class="my-0 mx-2">
-                    Michele<br />
+                    Davide<br />
                     <span class="latest-access">Ultimo messaggio inviato</span>
                   </p>
                 </div>
     
                 <span class="latest-access">12:00</span>
-              </li>
+              </li> -->
             </ul>
           </section>
           </div>
