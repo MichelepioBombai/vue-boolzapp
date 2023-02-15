@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  height: 100vh;
+  height: 97vh;
   background: linear-gradient(
     to top,
     hsl(77deg 9% 85%) 85%,
@@ -126,4 +126,29 @@ footer {
 .thumb img {
   width: 65px;
   display: flex;
+}
+
+.list-contacts {
+  overflow: auto;
+  background-color: white;
+}
+
+.list-contacts--contact {
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.contact--active,
+.list-contacts--contact:hover {
+  background-color: lightgrey;
+}
+
+.avatar {
+  height: 70px;
+  border-radius: 50%;
+}
+
+.latest-access {
+  color: gray;
+  font-size: 0.9rem;
 }

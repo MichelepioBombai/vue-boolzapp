@@ -82,25 +82,111 @@
               </div>
             </section>
             <!-- QUARTA SECTION SIDEBAR -->
-            <section>
-              <div class="thumbs">
-                <div class="col thumb">
-                  <img
-                    :src="contact.avatar"
-                    v-for="(contact, index) in contacts"
-                    :class="(index == contacts.activeContact) ? 'active' : ''"
-                  />
-                  <h2 v-text="contacts.name"></h2>
+            <ul class="list-contacts flex-grow-1 m-0 p-0">
+              <li class="list-contacts--contact contact--active d-flex p-2">
+                <div class="contact--left d-flex flex-grow-1">
+                  <img src="./img/avatar_1.jpg" class="avatar" alt="" />
+                  <p class="my-0 mx-2">
+                    Michele<br />
+                    <span class="latest-access">Ultimo messaggio inviato</span>
+                  </p>
                 </div>
-              </div>
-            </section>
+    
+                <span class="latest-access">12:00</span>
+              </li>
+    
+              <li class="list-contacts--contact d-flex p-2">
+                <div class="contact--left d-flex flex-grow-1">
+                  <img src="./img/avatar_2.jpg" class="avatar" alt="" />
+                  <p class="my-0 mx-2">
+                    Michele<br />
+                    <span class="latest-access">Ultimo messaggio inviato</span>
+                  </p>
+                </div>
+    
+                <span class="latest-access">12:00</span>
+              </li>
+    
+              <li class="list-contacts--contact d-flex p-2">
+                <div class="contact--left d-flex flex-grow-1">
+                  <img src="./img/avatar_3.jpg" class="avatar" alt="" />
+                  <p class="my-0 mx-2">
+                    Michele<br />
+                    <span class="latest-access">Ultimo messaggio inviato</span>
+                  </p>
+                </div>
+    
+                <span class="latest-access">12:00</span>
+              </li>
+    
+              <li class="list-contacts--contact d-flex p-2">
+                <div class="contact--left d-flex flex-grow-1">
+                  <img src="./img/avatar_4.jpg" class="avatar" alt="" />
+                  <p class="my-0 mx-2">
+                    Michele<br />
+                    <span class="latest-access">Ultimo messaggio inviato</span>
+                  </p>
+                </div>
+    
+                <span class="latest-access">12:00</span>
+              </li>
+    
+              <li class="list-contacts--contact d-flex p-2">
+                <div class="contact--left d-flex flex-grow-1">
+                  <img src="./img/avatar_5.jpg" class="avatar" alt="" />
+                  <p class="my-0 mx-2">
+                    Michele<br />
+                    <span class="latest-access">Ultimo messaggio inviato</span>
+                  </p>
+                </div>
+    
+                <span class="latest-access">12:00</span>
+              </li>
+
+              <li class="list-contacts--contact d-flex p-2">
+                <div class="contact--left d-flex flex-grow-1">
+                  <img src="./img/avatar_6.jpg" class="avatar" alt="" />
+                  <p class="my-0 mx-2">
+                    Michele<br />
+                    <span class="latest-access">Ultimo messaggio inviato</span>
+                  </p>
+                </div>
+    
+                <span class="latest-access">12:00</span>
+              </li>
+
+              <li class="list-contacts--contact d-flex p-2">
+                <div class="contact--left d-flex flex-grow-1">
+                  <img src="./img/avatar_7.jpg" class="avatar" alt="" />
+                  <p class="my-0 mx-2">
+                    Michele<br />
+                    <span class="latest-access">Ultimo messaggio inviato</span>
+                  </p>
+                </div>
+    
+                <span class="latest-access">12:00</span>
+              </li>
+
+              <li class="list-contacts--contact d-flex p-2">
+                <div class="contact--left d-flex flex-grow-1">
+                  <img src="./img/avatar_8.jpg" class="avatar" alt="" />
+                  <p class="my-0 mx-2">
+                    Michele<br />
+                    <span class="latest-access">Ultimo messaggio inviato</span>
+                  </p>
+                </div>
+    
+                <span class="latest-access">12:00</span>
+              </li>
+            </ul>
+          </section>
           </div>
           <div class="content">
             <header class="d-flex justify-content-between">
               <div class="info-user">
                 <img src="./img/avatar_1.jpg" alt="" height="50" />
                 <h2>Michele</h2>
-                <span class="accesso-info">Ultimo accesso oggi alle 12:00</span>
+                <span class="accesso-info">Ultimo messaggio inviato</span>
               </div>
               <div class="icons d-flex">
                 <i class="fa-solid fa-magnifying-glass"></i>
