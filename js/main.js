@@ -180,7 +180,28 @@ const app = Vue.createApp({
           ],
         },
       ],
+      newMessage: {
+        message: "",
+        status: "sent",
+        date: "12:00",
+      },
+      activeContact: 0,
     };
+  },
+  methods: {
+    sendMessage() {
+      this.contacts[this.activeContact].messages.push({
+        ...this.newMessage,
+      });
+
+      setTimeout(() => {
+        this.contacts[this.activeContact].messages.push({
+          message: "ok",
+          status: "received",
+          date: "12:01",
+        });
+      }, 1000);
+    },
   },
 });
 
